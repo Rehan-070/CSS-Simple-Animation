@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+       .container{
+        display: flex;
+       }
+       .box{
+        background-color: aqua;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        border-radius:100% ;
+        animation-name: hi;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+       }
+       .box1{
+        background-color: aqua;
+        height: 300px;
+        width: 300px;
+        position: relative;
+        border-radius:100% ;
+        animation-name: hi;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+       }
+       @keyframes hi {
+            0%{
+                top: 0px;
+                left: 0px;
+                background-color: crimson;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+                background-color: skyblue;
+            }
+            
+            75%{
+                top: 250px;
+                left: 250px;
+                background-color: darkgoldenrod;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+                background-color: lightgreen;
+            }
+           
+           
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box1"></div>
+    </div>
+</body>
+</html>
